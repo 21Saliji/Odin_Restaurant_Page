@@ -1,3 +1,5 @@
+import founderImg_src from './Founder.png';
+
 export function loadAbout() {
     const content = document.getElementById('content');
     content.innerHTML = '';
@@ -10,9 +12,10 @@ export function loadAbout() {
     founderImg.id = 'founder-img';
     content.appendChild(founderImg);
 
-    founderImg.style.backgroundImage = 'url("your-photo.jpg")';
+    founderImg.style.backgroundImage = `url("${founderImg_src}")`;
     founderImg.style.backgroundSize = 'cover';
     founderImg.style.backgroundPosition = 'center';
+    content.appendChild(founderImg);
 
     
     const story = document.createElement('p');
